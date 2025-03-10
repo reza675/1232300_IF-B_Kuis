@@ -73,7 +73,7 @@ public class HalamanUtama extends JFrame implements ActionListener {
                 int manggaJum = Integer.parseInt(manggaTextField.getText());
                 int jerukJum = Integer.parseInt(jerukTextField.getText());
                 
-                if(apelJum == 0 && manggaJum == 0 && jerukJum == 0){
+                if(apelJum <= 0 && manggaJum <= 0 && jerukJum <= 0){
                     throw new Exception();
                 }
                 new HalamanPembelian(username,apelJum,jerukJum,manggaJum);
